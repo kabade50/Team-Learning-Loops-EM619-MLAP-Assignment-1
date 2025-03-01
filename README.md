@@ -21,8 +21,12 @@ b)WALKING_UPSTAIRS vs. WALKING_DOWNSTAIRS: Both have similar fluctuations, but D
 
 1.The data clearly differentiates dynamic (WALKING) and static (SITTING) activities.However, some activities overlap (e.g., STANDING vs. SITTING).
 
+
 2.A good classification model (e.g., Random Forest, LSTM) would need:
+
 a)More features (e.g., gyroscope readings, FFT transformations).
+
 b)Feature engineering (e.g., computing jerk, energy levels).
+
 c)A sequence model (LSTM/RNN) to capture time dependencies
 
