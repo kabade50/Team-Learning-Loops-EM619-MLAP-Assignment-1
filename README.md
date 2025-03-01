@@ -1,5 +1,5 @@
 # Team-Learning-Loops-EM619-MLAP-Assignment-1
-#Task 1 : Exploratory Data Analysis (EDA)
+#####Task 1 : Exploratory Data Analysis (EDA)
 
 Question_1:Plot the waveform for one sample data from each activity class. Are you able to see any difference/similarities between the activities? You can plot a subplot having 6 columns to show differences/similarities between the activities. Do you think the model will be able to classify the activities based on the data?
 
@@ -108,3 +108,23 @@ Answer:
 2.Mean and median of a signal are usually similar (redundant in symmetric distributions).
 3.Removing these redundant features will improve the efficiency of machine learning models.
 
+#####Task 2######
+
+1.Raw Accelerometer Data -> Accuracy: 61% Precision: 56% Recall: 61% Confusion matrix shows significant misclassifications.
+
+2.TSFEL Feature Extraction -> Accuracy: 87% Precision: 88% Recall: 87% The confusion matrix indicates much better classification performance.
+
+3.Dataset Features (Possibly a reduced/processed feature set from your dataset) -> Accuracy: 61% Precision: 56% Recall: 61%
+
+The results are nearly identical to the raw data, suggesting that this set might not capture useful patterns as effectively as TSFEL.
+
+Why is TSFEL Performing Better?
+
+Raw accelerometer signals contain noise and high-dimensional information that is not directly useful for classification. TSFEL extracts statistical, temporal, and frequency-based features, which provide more meaningful inputs for machine learning models. Decision Trees perform better when given structured feature sets instead of raw sensor signals, which are highly variable.
+
+Decision Tree Accuracy vs. Depth You also analyzed how tree depth affects accuracy across different feature sets.
+Observations from the Graph: 1.TSFEL Features (Orange Line) -> i.Accuracy improves sharply with depth. ii.Peaks around depth 6-7 and then stabilizes, suggesting this is an optimal depth.
+
+2.Raw Data (Blue Line) -> i.Accuracy remains low, fluctuating around 50-60%. ii.It does not improve much with increasing depth, meaning the decision tree is struggling to separate the classes effectively.
+
+3.Dataset Features (Green Dashed Line)-> The trend is similar to raw data, reinforcing the idea that this feature set is not providing much additional useful information.
