@@ -9,19 +9,20 @@ Answer:
 
 1.Differences
 
-a.WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS: Show higher acceleration variations in all three axes.More peaks and fluctuations, indicating movement.
-b.SITTING, STANDING, LAYING: Show low or almost no variation in acceleration.Flat signals → Minimal movement.
+a)WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS: Show higher acceleration variations in all three axes.More peaks and fluctuations, indicating movement.
+b)SITTING, STANDING, LAYING: Show low or almost no variation in acceleration.Flat signals → Minimal movement.
 
 2.Similarities
 
-a.STANDING and SITTING: Almost identical low acceleration changes.Hard to distinguish using acceleration alone.
-b.WALKING_UPSTAIRS vs. WALKING_DOWNSTAIRS: Both have similar fluctuations, but DOWNSTAIRS shows higher peaks (stronger force due to gravity).
+a)STANDING and SITTING: Almost identical low acceleration changes.Hard to distinguish using acceleration alone.
+b)WALKING_UPSTAIRS vs. WALKING_DOWNSTAIRS: Both have similar fluctuations, but DOWNSTAIRS shows higher peaks (stronger force due to gravity).
 
 -->Can a Model Classify These Activities?
 
 1.The data clearly differentiates dynamic (WALKING) and static (SITTING) activities.However, some activities overlap (e.g., STANDING vs. SITTING).
+
 2.A good classification model (e.g., Random Forest, LSTM) would need:
-a More features (e.g., gyroscope readings, FFT transformations).
-b.Feature engineering (e.g., computing jerk, energy levels).
-c.A sequence model (LSTM/RNN) to capture time dependencies
+a)More features (e.g., gyroscope readings, FFT transformations).
+b)Feature engineering (e.g., computing jerk, energy levels).
+c)A sequence model (LSTM/RNN) to capture time dependencies
 
