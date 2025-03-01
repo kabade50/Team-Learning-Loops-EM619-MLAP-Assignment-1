@@ -98,3 +98,13 @@ Incorporating all features enhances the model's ability to distinguish between a
 
 Conclusion: The distinct clustering in the PCA plots suggests that a machine learning model trained on these features would effectively classify the activities.
 
+Question 4:
+
+Calculate the correlation matrix of the features obtained by TSFEL and provided in the dataset. Identify the features that are highly correlated with each other. Are there any redundant features? 
+
+Answer:
+
+1.Variance and standard deviation are often correlated (redundant).
+2.Mean and median of a signal are usually similar (redundant in symmetric distributions).
+3.Removing these redundant features will improve the efficiency of machine learning models.
+
