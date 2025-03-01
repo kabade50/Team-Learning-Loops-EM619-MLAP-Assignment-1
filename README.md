@@ -10,11 +10,13 @@ Answer:
 1.Differences
 
 a)WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS: Show higher acceleration variations in all three axes.More peaks and fluctuations, indicating movement.
+
 b)SITTING, STANDING, LAYING: Show low or almost no variation in acceleration.Flat signals → Minimal movement.
 
 2.Similarities
 
 a)STANDING and SITTING: Almost identical low acceleration changes.Hard to distinguish using acceleration alone.
+
 b)WALKING_UPSTAIRS vs. WALKING_DOWNSTAIRS: Both have similar fluctuations, but DOWNSTAIRS shows higher peaks (stronger force due to gravity).
 
 -->Can a Model Classify These Activities?
